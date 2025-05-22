@@ -12,6 +12,10 @@ git checkout -b tp3/v1
 
 Implementar una aplicación que funcione como un contador de frecuencia. El microcontrolador debe ser capaz de detectar cada flanco ascendente por un GPIO que provenga de un generador de onda cuadrada y mostrar el valor que corresponda. Como máximo podemos estimar 10KHz de frecuencia.
 
+> :warning: Para este trabajo práctico, es necesario tener un LCD de 16x2 o 20x4 que tenga un adaptador de I2C soldado como el siguiente:
+>
+> ![LCD con I2C](https://lastminuteengineers.com/wp-content/uploads/arduino/I2C-LCD-Display-Pinout.png)
+
 ### Primera versión
 
 Implementar la consigna a través de una tarea que lea el estado del GPIO por polling y mostrar el valor de frecuencia por consola.
