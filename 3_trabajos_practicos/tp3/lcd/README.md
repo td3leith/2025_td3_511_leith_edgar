@@ -5,9 +5,8 @@ Para agregar esta biblioteca en el proyecto, incluir en el `CMakeLists.txt` gene
 ```cmake
 # Añadir la subcarpeta donde está la biblioteca LCD
 add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/../lcd ${CMAKE_BINARY_DIR}/lcd)
-
 # Agrega dependencia al proyecto
-target_link_libraries(firmware PRIVATE lcd)
+target_link_libraries(firmware lcd)
 ```
 
 ## Uso de la biblioteca
