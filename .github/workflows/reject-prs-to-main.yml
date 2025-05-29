@@ -1,8 +1,8 @@
-name: Reject PRs to main
+name: Rechazar PR a main
 
 on:
-  pull_request:
-    types: [opened, reopened, synchronize]
+  pull_request_target:
+    types: [opened]
     branches:
       - main
 
@@ -10,8 +10,6 @@ jobs:
   reject:
     runs-on: ubuntu-latest
     steps:
-      - name: Close pull request
-        uses: peter-evans/close-pull-request@v3
-        with:
-          comment: |
-            ❌ Intentaste hacer un _pull request_ hacia `main`. Volvé a hacer el PR hacia la rama que te corresponde (la propia que tiene tu nombre y apellido).
+    - uses: superbrothers/close-pull-request@v3
+      with:
+        comment: "❌ Intentaste hacer un _pull request_ hacia `main`. Volvé a hacer el PR hacia la rama que te corresponde (la propia que tiene tu nombre y apellido)."
