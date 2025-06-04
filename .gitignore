@@ -16,3 +16,8 @@ build/
 *.dis
 *.obj
 *.stackdump
+
+
+3_trabajos_practicos\tp1\freertos
+3_trabajos_practicos\tp2
+3_trabajos_practicos\tp3
