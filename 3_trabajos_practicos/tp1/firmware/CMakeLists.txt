@@ -34,7 +34,7 @@ project(firmware C CXX ASM)
 pico_sdk_init()
 
 # Add external FreeRTOS library
-add_subdirectory(freertos ../freertos)
+add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/../freertos ${CMAKE_BINARY_DIR}/freertos)
 
 # Add executable. Default name is the project name, version 0.1
 
