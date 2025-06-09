@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 /*ahora con la libreria del otro ejercicio*/
-/*otra version*/
+
 #include "FreeRTOS.h"
 #include "task.h"
 
