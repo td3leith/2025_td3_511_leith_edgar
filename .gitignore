@@ -1,0 +1,23 @@
+build
+.vscode
+
+# Ignorar directorios de compilación
+build/
+*/build/
+**/*/build/
+
+# Archivos generados de compilación
+*.o
+*.elf
+*.uf2
+*.bin
+*.hex
+*.map
+*.dis
+*.obj
+*.stackdump
+
+
+3_trabajos_practicos\tp1\freertos
+3_trabajos_practicos\tp2
+3_trabajos_practicos\tp3
